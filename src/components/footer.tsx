@@ -16,7 +16,7 @@ export default function Footer() {
         <a href="mailto:jasonnelemans@hotmail.com">
           <FaEnvelope size={iconSize} /></a>
       </p>
-      <p>Copyright © 2020 | Nelemans</p>
+      <p>Copyright © 2020 | Jason Nelemans</p>
     </FooterContainer>
   )
 }
@@ -24,7 +24,7 @@ export default function Footer() {
 const FooterContainer = styled.div`
   border-top: 1px solid black;
   text-align: center;
-  padding-bottom: 5px;
+  padding: 10px;
   background-color: #102B3F;
 
   svg {
