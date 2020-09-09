@@ -67,10 +67,9 @@ const TextContainer = styled.div`
 
 const Button = styled.div`
   border: 2px solid #797D81;
-  color: #fff;
+  color: #797D81;
   border-radius: 3px;
   display: inline-block;
   padding: 5px;
-  background-color: #797D81;
   cursor: pointer;
 `;
