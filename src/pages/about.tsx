@@ -15,7 +15,7 @@ export default function About() {
             Currently, I am a junior <strong>front-end developer</strong> (aspiring to a complete full stack) and open for opportunities.
             I seek environments where I can share my <strong>passion for technology</strong> and life in general.
             Software development has captured my heart and the more I learn the more I grow fond of it.
-            <strong> Do you relate?</strong> Let's talk about it.
+            <strong> Do you relate?</strong> Let's have a <a href="">chat.</a>
           </p>
           <Button>
             Visit portfolio
@@ -37,9 +37,10 @@ const AboutContainer = styled.div`
 
 const ContentContainer = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 80px;
-
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
 
 const TextContainer = styled.div`
@@ -63,6 +64,10 @@ const TextContainer = styled.div`
       color: #53131E;
     }
   }
+
+  a {
+    color: #102B3F;
+  }
 `
 
 const Button = styled.div`
@@ -72,4 +77,11 @@ const Button = styled.div`
   display: inline-block;
   padding: 5px;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: #797D81;
+    transform: scale(1.1);
+  }
 `;
