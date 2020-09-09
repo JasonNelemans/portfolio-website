@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 export default function Footer() {
   return (
-    <div>
+    <FooterContainer>
       This is the footer.
-    </div>
+    </FooterContainer>
   )
 }
+
+const FooterContainer = styled.div`
+  border-top: 1px solid black;
+  text-align: center;
+`
