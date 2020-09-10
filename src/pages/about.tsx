@@ -9,12 +9,14 @@ export default function About() {
       <ContentContainer>
         <img src={picture} alt="profile" />
         <TextContainer>
-          <h1><span>Hi,</span> my name is Jason.</h1>
-          <h2>Nice to meet <span>you.</span></h2>
+          <div className="header">
+            <h1><span>Hi,</span> my name is Jason.</h1>
+            <h2>Nice to meet <span>you.</span></h2>
+          </div>
           <p className="text">
             Currently, I am a junior <strong>front-end developer</strong> (aspiring to a complete full stack) and open for opportunities.
             I seek environments where I can share my <strong>passion for technology</strong> and life in general.
-            Software development has captured my heart and the more I learn the more I grow fond of it.
+            Software development has captured my heart and the more I learn, the more I grow fond of it.
             <strong> Do you relate?</strong> Let's have a <a href="">chat.</a>
           </p>
           <Button>
@@ -30,7 +32,6 @@ const AboutContainer = styled.div`
   img {
     height: 280px;
     width: 211px;
-    margin-right: 40px;  
     margin-top: 6px;  
   }
 `
@@ -41,11 +42,35 @@ const ContentContainer = styled.div`
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    position: static;
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    .header {
+      margin-top: 40px;
+    }
+
+    .text {
+      margin: 25px 10px 35px;
+    }
+
+    img {
+      margin-top: 45px;
+      margin-bottom: 60px;
+    }
+  }
 `
 
 const TextContainer = styled.div`
   margin-left: 30px;
-  max-width: 400px;
 
   h1, h2 {
     margin: 0;
@@ -67,6 +92,10 @@ const TextContainer = styled.div`
 
   a {
     color: #102B3F;
+  }
+
+  @media (max-width: 900px) {
+    margin-left: 0;
   }
 `
 
