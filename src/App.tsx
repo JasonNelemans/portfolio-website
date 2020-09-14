@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 import About from './pages/about';
 import Footer from './components/footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyles />
       <Wrapper>
         <Content>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={About} />
           </Switch>
