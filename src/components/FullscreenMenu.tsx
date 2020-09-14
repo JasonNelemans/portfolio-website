@@ -6,9 +6,27 @@ export default function FullscreenMenu() {
 
   return (
     <FullscreenMenuContainer>
-      {open && <div className="FullscreenMenu">hello</div>}
+      {open && <div className="FullscreenMenu">
+        <ul>
+          {['About', 'Portfolio', 'Contact'].map((text, i) => {
+            return (
+              <li key={i}>
+                <a
+                  href="#"
+                  onClick={e => {
+                    e.preventDefault();
+                    setOpen(false);
+                  }}
+                >
+                  {text}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>}
       <StyledButton
-        style={{ color: open ? "white" : "black" }}
+        style={{ color: open ? '#fff' : '#797D81' }}
         onClick={() => setOpen(!open)}
       >
         <svg width="2rem" height="2rem" viewBox="0 0 24 24">
@@ -26,8 +44,8 @@ export default function FullscreenMenu() {
 const StyledButton = styled.button`
   z-index: 7;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 1.3rem;
+  right: 1.7rem;
   border: none;
   background: none;
   display: flex;
@@ -40,8 +58,6 @@ const StyledButton = styled.button`
 `
 
 const FullscreenMenuContainer = styled.div`
-
-
   .FullscreenMenu {
     z-index: 6;
     position: absolute;
@@ -49,15 +65,17 @@ const FullscreenMenuContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    padding-bottom: 150px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: #412eb5;
-    color: white;
+    background: #102B3F;
+    color: #C89933;
 
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: sans-serif;
 
     ul {
       display: block;
@@ -67,7 +85,19 @@ const FullscreenMenuContainer = styled.div`
 
     li {
       display: block;
-      margin: 0.5rem;
+      margin: 1rem;
+    }
+
+    a {
+      color: #C89933;;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #fff;
     }
   }
 `
