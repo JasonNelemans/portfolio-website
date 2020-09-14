@@ -71,6 +71,7 @@ const ContentContainer = styled.div`
 
 const TextContainer = styled.div`
   margin-left: 30px;
+  max-width: 400px;
 
   h1, h2 {
     margin: 0;
@@ -82,6 +83,7 @@ const TextContainer = styled.div`
   }
   
   .text {
+    margin-top: 16px;
     line-height: 1.5;
     color: #102B3F;
     
@@ -107,6 +109,7 @@ const Button = styled.div`
   padding: 5px;
   cursor: pointer;
   transition: all .2s ease-in-out;
+  margin-top: 7px;
 
   &:hover {
     color: #fff;
