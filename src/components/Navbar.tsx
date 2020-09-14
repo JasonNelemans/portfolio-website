@@ -18,4 +18,8 @@ const StyledNavbar = styled.div`
   justify-content: flex-end;
   margin-top: 25px;
   margin-right: 35px;
+
+  svg:hover {
+    cursor: pointer;
+  }
 `
