@@ -86,6 +86,19 @@ const FullscreenMenuContainer = styled.div`
     li {
       display: block;
       margin: 1rem;
+
+      animation: slideInFromLeft 0.5s ease;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        opacity: 0;
+        transform: translate(-1.5rem, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
     }
 
     a {
