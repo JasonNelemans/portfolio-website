@@ -12,6 +12,8 @@ export default function Navbar() {
 
 const StyledNavbar = styled.div`
   position: sticky;
+  position: -webkit-sticky;
+  top: 25px;
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
