@@ -27,19 +27,33 @@ export default function FullscreenMenu() {
         </ul>
       </div>}
       <StyledButton
-        style={{ color: open ? '#fff' : '#797D81' }}
+        style={{ color: open ? '#C89933' : '#797D81' }}
         onClick={() => setOpen(!open)}
       >
         <svg width="2rem" height="2rem" viewBox="0 0 24 24">
           <g stroke="currentColor" strokeWidth={2}>
             <motion.line
               x1="0" y1="4" x2="24" y2="4"
+              animate={{
+                x1: open ? 4 : 0,
+                x2: open ? 20 : 24,
+                y2: open ? 20 : 4
+              }}
             />
             <motion.line
               x1="0" y1="12" x2="24" y2="12"
+              animate={{
+                x1: open ? 12 : 0,
+                x2: open ? 12 : 24
+              }}
             />
             <motion.line
               x1="0" y1="20" x2="24" y2="20"
+              animate={{
+                x1: open ? 4 : 0,
+                x2: open ? 20 : 24,
+                y2: open ? 4 : 20
+              }}
             />
           </g>
         </svg>
@@ -109,15 +123,14 @@ const FullscreenMenuContainer = styled.div`
     }
 
     a {
-      color: #C89933;;
+      color: #fff;
       font-weight: bold;
       text-decoration: none;
-      transition: all .1s ease-in-out;
     }
 
     a:hover {
       text-decoration: underline;
-      color: #fff;
+      text-decoration-color: #C89933;
     }
   }
 `
