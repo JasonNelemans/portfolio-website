@@ -37,11 +37,16 @@ const AboutContainer = styled.div`
 `
 
 const ContentContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 150px;
+
   display: flex;
-  position: fixed;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
