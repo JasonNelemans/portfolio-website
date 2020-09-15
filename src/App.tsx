@@ -4,7 +4,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 import About from './pages/about';
 import Footer from './components/footer';
-import Navbar from './components/Navbar';
 import FullscreenMenu from './components/FullscreenMenu';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <Wrapper>
         <Content>
           <FullscreenMenu />
-          {/* <Navbar /> */}
           <Switch>
             <Route exact path="/" component={About} />
           </Switch>

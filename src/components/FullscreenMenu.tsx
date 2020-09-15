@@ -10,7 +10,7 @@ export default function FullscreenMenu() {
         <ul>
           {['About', 'Portfolio', 'Contact'].map((text, i) => {
             return (
-              <li key={i}>
+              <li key={i} style={{ animationDelay: `${100 * i}ms` }}>
                 <a
                   href="#"
                   onClick={e => {
@@ -87,7 +87,7 @@ const FullscreenMenuContainer = styled.div`
       display: block;
       margin: 1rem;
 
-      animation: slideInFromLeft 0.5s ease;
+      animation: slideInFromLeft 0.5s ease backwards;
     }
 
     @keyframes slideInFromLeft {
@@ -105,7 +105,7 @@ const FullscreenMenuContainer = styled.div`
       color: #C89933;;
       font-weight: bold;
       text-decoration: none;
-      transition: all .2s ease-in-out;
+      transition: all .1s ease-in-out;
     }
 
     a:hover {
