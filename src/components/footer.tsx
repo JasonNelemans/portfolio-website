@@ -28,6 +28,7 @@ const FooterContainer = styled.div`
   text-align: center;
   padding: 10px;
   background-color: ${colors.blue};
+  z-index: 3;
 
   svg {
     margin: 5px 10px;

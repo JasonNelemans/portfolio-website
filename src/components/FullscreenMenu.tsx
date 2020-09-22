@@ -63,7 +63,7 @@ export default function FullscreenMenu() {
 }
 
 const StyledButton = styled.button`
-  z-index: 7;
+  z-index: 5;
   position: fixed;
   top: 1.3rem;
   right: 1.7rem;
@@ -80,7 +80,7 @@ const StyledButton = styled.button`
 
 const FullscreenMenuContainer = styled.div`
   .FullscreenMenu {
-    z-index: 6;
+    z-index: 4;
     position: absolute;
     top: 0;
     left: 0;
