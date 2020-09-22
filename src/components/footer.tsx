@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
+import colors from '../config/colors';
+
 export default function Footer() {
   const iconSize = 18
   return (
@@ -25,7 +27,7 @@ const FooterContainer = styled.div`
   border-top: 1px solid black;
   text-align: center;
   padding: 10px;
-  background-color: #102B3F;
+  background-color: ${colors.blue};
 
   svg {
     margin: 5px 10px;
@@ -33,11 +35,11 @@ const FooterContainer = styled.div`
   }
 
   a {
-    color: white;
+    color: ${colors.white};
   }
 
   p {
     margin: 0;
-    color: white;
+    color: ${colors.white};
   }
 `

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import picture from '../images/JasonPF.jpg'
+import picture from '../images/JasonPF.jpg';
+import colors from '../config/colors';
 
 export default function About() {
   return (
@@ -80,25 +81,25 @@ const TextContainer = styled.div`
 
   h1, h2 {
     margin: 0;
-    color: #102B3F;
+    color: ${colors.blue};
   }
 
   span {
-    color: #C89933;
+    color: ${colors.gold};
   }
   
   .text {
     margin-top: 16px;
     line-height: 1.5;
-    color: #102B3F;
+    color: ${colors.blue};
     
     strong {
-      color: #53131E;
+      color: ${colors.sienna};
     }
   }
 
   a {
-    color: #102B3F;
+    color: ${colors.blue};
   }
 
   @media (max-width: 900px) {
@@ -107,8 +108,8 @@ const TextContainer = styled.div`
 `
 
 const Button = styled.div`
-  border: 2px solid #797D81;
-  color: #797D81;
+  border: 2px solid ${colors.gray};
+  color: ${colors.gray};
   border-radius: 3px;
   display: inline-block;
   padding: 5px;
@@ -117,8 +118,8 @@ const Button = styled.div`
   margin-top: 7px;
 
   &:hover {
-    color: #fff;
-    background-color: #797D81;
+    color: ${colors.white};
+    background-color: ${colors.gray};
     transform: scale(1.1);
   }
 `;
