@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import About from './pages/about';
 import Footer from './components/footer';
 import FullscreenMenu from './components/FullscreenMenu';
+import Portfolio from './pages/portfolio';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <FullscreenMenu />
           <Switch>
             <Route exact path="/" component={About} />
+            <Route exact path='/portfolio' component={Portfolio} />
           </Switch>
         </Content>
         <Footer />

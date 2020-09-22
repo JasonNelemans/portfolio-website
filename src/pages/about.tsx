@@ -17,7 +17,7 @@ export default function About() {
             Currently, I am a junior <strong>front-end developer</strong> (aspiring to a complete full stack) and open for opportunities.
             I seek environments where I can share my <strong>passion for technology</strong> and life in general.
             Software development has captured my heart and the more I learn, the more I grow fond of it.
-            <strong> Do you relate?</strong> Let's have a <a href="#">chat.</a>
+            <strong> Like anything you hear?</strong> Then let's have a <a href="#">chat.</a>
           </p>
           <Button>
             Visit portfolio
