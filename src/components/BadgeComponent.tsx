@@ -22,7 +22,7 @@ export default function BadgeComponent(props: any) {
 
 const StyledBadge = styled.div`
   text-align: center;
-  margin: 5px;
+  margin: 7px;
   font-family: sans-serif;
 
   p {
