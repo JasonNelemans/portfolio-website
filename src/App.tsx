@@ -6,6 +6,7 @@ import About from './pages/about';
 import Footer from './components/footer';
 import FullscreenMenu from './components/FullscreenMenu';
 import Portfolio from './pages/portfolio';
+import colors from './config/colors';
 
 function App() {
   return (
@@ -29,6 +30,11 @@ export const GlobalStyles = createGlobalStyle`
   html: 100%;
   body {
     margin: 0;
+  }
+
+  h1, h2 {
+    margin: 0;
+    color: ${colors.blue};
   }
 `
 

@@ -79,11 +79,6 @@ const TextContainer = styled.div`
   margin-left: 30px;
   max-width: 400px;
 
-  h1, h2 {
-    margin: 0;
-    color: ${colors.blue};
-  }
-
   span {
     color: ${colors.gold};
   }
