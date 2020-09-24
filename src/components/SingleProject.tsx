@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function SingleProject() {
+export default function SingleProject(props: any) {
+  console.log('props in SingleProject', props);
+  const compWidth = 50;
+  const compHeight = compWidth - 20;
+
   return (
     <StyledProject>
       <StyledProjectBar>
@@ -10,19 +14,24 @@ export default function SingleProject() {
         <StyledBarDots color='#28ca41' />
       </StyledProjectBar>
       <StyledProjectWindow>
-
+        <StyledImage src={props.image} />
       </StyledProjectWindow>
     </StyledProject>
   )
 };
 
+interface StyledProject {
+  width: any;
+  height: any
+}
+
 const StyledProject = styled.div`
+  max-width: 50%;
 `
 
 const StyledProjectBar = styled.div`
-  border: 1px solid grey;
   border-bottom: 0;
-  width: 150px;
+  width: 100%;
   height: 15px;
 
   display: flex;
@@ -39,7 +48,9 @@ const StyledBarDots = styled.div`
 `
 
 const StyledProjectWindow = styled.div`
-  border: 1px solid grey;
-  width: 150px;
-  height: 100px;
+`
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: 350px;
 `
