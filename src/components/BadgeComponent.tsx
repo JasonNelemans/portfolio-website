@@ -27,7 +27,7 @@ const StyledBadge = styled.div`
 
   p {
     margin: 0;
-    color: ${colors.blue}
+    color: ${colors.gray}
   }
 
   input[type="radio"] {

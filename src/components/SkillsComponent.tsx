@@ -17,14 +17,12 @@ import {
   SiGit
 } from "react-icons/si";
 
-import colors from '../config/colors';
-import BadgeComponent from '../components/BadgeComponent';
+import BadgeComponent from './BadgeComponent';
 
-export default function Portfolio() {
-  const iconSize = 55
+export default function SkillsComponent() {
+  const iconSize = 55;
   return (
-    <StyledPortfolioWrapper>
-      <h1>Portfolio</h1>
+    <>
       <h2>Skills</h2>
       <StyledBadgesWrapper>
         <BadgeComponent name='HTML5'>
@@ -73,16 +71,9 @@ export default function Portfolio() {
           <SiGithub size={iconSize} color='#211F1F' />
         </BadgeComponent>
       </StyledBadgesWrapper>
-    </StyledPortfolioWrapper>
+    </>
   )
 }
-
-const StyledPortfolioWrapper = styled.div`
-  h2 {
-   margin-top: 20px;
-   margin-bottom: 10px;
-  }
-`
 
 const StyledBadgesWrapper = styled.div`
   display: flex;
