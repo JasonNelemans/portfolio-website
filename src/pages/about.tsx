@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 
 import picture from '../images/JasonPF.jpg';
 import colors from '../config/colors';
@@ -20,9 +21,9 @@ export default function About() {
             Software development has captured my heart and the more I learn, the more I grow fond of it.
             <strong> Like anything you hear?</strong> Then let's have a <a href="#">chat.</a>
           </p>
-          <Button>
+          <NavLink to='/portfolio'><Button>
             Visit portfolio
-          </Button>
+          </Button></NavLink>
         </TextContainer>
       </ContentContainer>
     </AboutContainer>
